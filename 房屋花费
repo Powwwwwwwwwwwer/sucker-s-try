@@ -1,0 +1,14 @@
+#define  _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int  price,s,hp;
+	float tax,tc;
+	printf("plz input the price of each square meter and the area of your house");
+	scanf("%d%d",&price,&s);
+	hp = s * price;
+	tax = 0.7 * hp * 0.012;
+	tc = hp + tax;
+	printf("%.3f", tc);
+	return 0;
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+main()
+{
+	int score,grade;
+	ptintf("input the score : ");
+	scanf("%d", &score);
+	grade =score / 10;
+	if (score >= 0 && score < 100)//if以及else，elseif啥的没有分号
+	{
+		switch (grade)//switch后没有分号
+		{
+		case 10:
+		case 9:printf("grade is A\n"); break;
+		case 8:printf("grade is B\n"); break;
+		case 7:printf("grade is c\n"); break;//grade=7时执行这一项，break打断
+		case 5://啥也没有无打断往下依次执行
+		case 4:
+		case 3:
+		case 2:
+		case 1:
+		case 0:printf("grade is D\n");
+		}
+	}
+	else
+		printf("the score is error\n");
+	return 0;
+ }

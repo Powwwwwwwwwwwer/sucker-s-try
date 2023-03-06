@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main()
+{
+	int opr;
+	int a, b, c;
+	srand(time(0));//注意有分号
+	opr = rand() % 2;
+	a = rand() % 10;
+	b = rand() % 10;
+	if (opr == 0)
+	{
+		printf("%d+%d=", a, b);
+		scanf("%d",&c);
+		if (a + b == c)
+			printf("good job,dude\n");
+		else
+			printf("do it again\n");
+	}
+	else
+	{
+		printf("%d+%d=", a, b);
+		scanf("%d", &c);
+		if (a - b == c)
+			printf("good job,dude\n");
+		else
+			printf("do it again\n");
+	}
+	return 0;
+}

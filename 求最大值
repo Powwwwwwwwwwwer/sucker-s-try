@@ -20,3 +20,4 @@ main()
 		printf("%f,%f,%f", a, b, c);
 	return 0;
 }
+//直接按abc的顺序输出但是通过if语句通过中间值t将值互换使a<b<c

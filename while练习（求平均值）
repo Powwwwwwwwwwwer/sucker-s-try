@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int n = 0;
+    float score, avg, s = 0;
+
+    printf("please input the score, end by input -1: ");
+    scanf("%f", &score);
+
+    while (score != -1)
+    {
+        n++;
+        s = s + score;
+        scanf("%f", &score);
+    }
+
+    avg = s / n;
+    printf("the total number of students is %d\n", n);
+    printf("the average score is: %.1f\n", avg);
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	int a, s=0, i;
+	printf("plz input the number you want to add up to  itself:");
+	scanf("%d", &a);
+	for (i=0; i<=a; i++)//正常情况1为赋值，2为判断条件真执行，假就润，3是修改
+	{
+		if (i<a)
+		{
+			printf("%d+", i);
+			s = s + i;
+		}
+		else
+			printf("%d=%d", i,s);
+	}
+	return 0;
+}

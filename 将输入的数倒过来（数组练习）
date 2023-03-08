@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+	int n, arr[10];
+	printf("plz input 10 number;");
+	for (n = 0; n < 10; n++)
+		scanf("%d", &arr[n]);
+	for (n = 9; n >= 0; n--)
+	printf("%d ",arr[n]);
+	return 0;
+}

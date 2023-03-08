@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+	int i,k;
+	printf("plz input the num:");
+	scanf("%d", &k);
+	for (i = 2; i < k; i++)
+		if (k % i == 0)//if里面的表达式不用加双引号
+		{
+			break;
+		}
+	if (i >= k)
+		printf("%d是素数\n", k);
+	else
+		printf("%d不是素数\n", k);
+	return 0;
+}

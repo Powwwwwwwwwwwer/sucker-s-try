@@ -5,6 +5,6 @@ void increase(int a)
 main()
 {
 	int x = 10
-		increase(x);//结果不是十一，举个例子而已
+		increase(x);//结果不是十一，举个例子而已，这种操作也成为传值调用
 }
 //x是实参，a是形参

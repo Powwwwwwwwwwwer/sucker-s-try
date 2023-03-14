@@ -1,0 +1,10 @@
+void increase(int a)
+{
+	a = a + 1;
+}
+main()
+{
+	int x = 10
+		increase(x);//结果不是十一，举个例子而已
+}
+//x是实参，a是形参

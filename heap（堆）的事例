@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a;//存到stack区
+	int* p;
+	p = (int*)malloc(sizeof(int));//在heap（堆）上申请四个字节
+	free(p);//将分配给p的内存释放出来（删除这个指针的值）
+	p = (int*)malloc(sizeof(int));
+	*p = 20;
+}

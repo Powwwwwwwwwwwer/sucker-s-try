@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+int main()
+{
+	int a, b, c;
+		char operrate;
+	scanf("%d %d %c", &a, &b, &operrate);
+	if (operrate == '/')
+	{
+		if (a == 0)
+			printf("Divided by zero!");
+		else {
+			c = a / b;
+			printf("%d", c);
+		}
+	}
+	else if (operrate == '+')
+	{
+		c = a + b;
+		printf("%d", c);
+
+	}
+	else  if (operrate == '-')
+	{
+		c = a - b;
+		printf("%d", c);
+
+	}
+	else if(operrate =='*')
+	{
+		c = a * b;
+		printf("%d", c);
+	}
+	else {
+		printf("Invalid operator!");
+		return  0;
+	}
+}

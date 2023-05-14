@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int i, k;
+	scanf("%d %d", &i,&k);
+	i += 1;
+	k += 1;
+	if (i <= 2)
+	{
+		if (i >= 0)
+		{
+			if (k <= 2)
+			{
+				if (k >= 0)
+				{
+					printf("yes");
+				}
+			}
+			else
+				printf("no");
+		}
+		else
+			printf("no");
+	}
+	else
+		printf("no");
+	return 0;
+}
